@@ -1,0 +1,7 @@
+node_modules/
+json.sqlite
+.env
+logs/
+package-lock.json
+# config.json (uncomment if you want to protect your production config)
+# config.json
