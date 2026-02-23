@@ -50,7 +50,7 @@ module.exports = async (client) => {
         }
         if (rolesToAdd.length > 0) {
             try {
-                await member.roles.add(rolesToAdd, 'Levix Autorole');
+                await member.roles.add(rolesToAdd, 'Jingle Autorole');
             } catch (err) {
                 if (err.code === 429) {
                     await client.util.handleRateLimit();

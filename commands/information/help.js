@@ -68,12 +68,12 @@ module.exports = {
 
             embed.addField('Usage', `\`${prefix}${command.name}${command.subcommand ? ' <subcommand>' : ''}\``);
 
-            let Levix = await client.users.fetch(`354455090888835073`)
+            let Jingle = await client.users.fetch(`354455090888835073`)
             embed.setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
                 .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
                 .setFooter({
-                    text: `Levix on Top ???`,
-                    iconURL: Levix.displayAvatarURL({
+                    text: `Jingle on Top ???`,
+                    iconURL: Jingle.displayAvatarURL({
                         dynamic: true
                     })
                 })
@@ -216,11 +216,11 @@ module.exports = {
             })
             .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
             .setDescription(
-                `Hello ! I'm Levix, Your Bot For Server\nSecurity With Powerful Antinuke Features.\n\nPrefix For This Server \`${prefix}\`\nTotal Commands \`${getTotalCommandCount()}\``)
+                `Hello ! I'm Jingle, Your Bot For Server\nSecurity With Powerful Antinuke Features.\n\nPrefix For This Server \`${prefix}\`\nTotal Commands \`${getTotalCommandCount()}\``)
             .addField(
                 '__Main Modules__',
                 `
-                \<:Levix_antinuke:1430991397015523338> **AntiNuke**\n\<:Levix_moderation:1430994703624568962>  **Moderation**\n\<:Levix_utility:1430994131152535752> **Utility**\n\<:Levix_welc:1430997030096081037> **Welcomer**\n\<:Levix_ticket:1430991839422451773> **Ticket**\n\<:Levix_selfrole:1430992192079663257> **Reaction Role**\n\<:Levix_ai:1430992387110600841> **AI**\n\<:Levix_voice:1430992734042329108> **Voice**\n\<:Levix_Cusrtomrole:1430998268023930940> **Customrole**\n\<:Levix_logging:1430998421996834957> **Logging**\n\<:Levix_serveractivity:1430995877325049866> **Server Activity**\n\<:Levix_stickymsg:1430993936867917916> **Sticky Message**\n\<:Levix_automod:1430995527092404334> **Advance Automod**\n\<:Levix_gwy:1430993235064524912> **Giveaway**\n\<:Levix_autorespond:1430993728780107776> **Autorespond**\n\<:Levix_fun:1430993355403301036> **Fun**
+                \<:Jingle_antinuke:1430991397015523338> **AntiNuke**\n\<:Jingle_moderation:1430994703624568962>  **Moderation**\n\<:Jingle_utility:1430994131152535752> **Utility**\n\<:Jingle_welc:1430997030096081037> **Welcomer**\n\<:Jingle_ticket:1430991839422451773> **Ticket**\n\<:Jingle_selfrole:1430992192079663257> **Reaction Role**\n\<:Jingle_ai:1430992387110600841> **AI**\n\<:Jingle_voice:1430992734042329108> **Voice**\n\<:Jingle_Cusrtomrole:1430998268023930940> **Customrole**\n\<:Jingle_logging:1430998421996834957> **Logging**\n\<:Jingle_serveractivity:1430995877325049866> **Server Activity**\n\<:Jingle_stickymsg:1430993936867917916> **Sticky Message**\n\<:Jingle_automod:1430995527092404334> **Advance Automod**\n\<:Jingle_gwy:1430993235064524912> **Giveaway**\n\<:Jingle_autorespond:1430993728780107776> **Autorespond**\n\<:Jingle_fun:1430993355403301036> **Fun**
                 `,
                 false
             )

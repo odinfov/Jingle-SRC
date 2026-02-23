@@ -209,7 +209,7 @@ module.exports = {
                         .setColor(client.color)
                         .setThumbnail(guildIcon)
                         .setDescription(description)                            
-                        .setFooter(`Levix on Top ???`, client.user.displayAvatarURL())
+                        .setFooter(`Jingle on Top ???`, client.user.displayAvatarURL())
                         .setAuthor(guildName, guildIcon);
                                 
                     return message.channel.send({ embeds: [embedList] });

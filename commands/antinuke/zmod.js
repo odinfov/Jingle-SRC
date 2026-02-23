@@ -91,7 +91,7 @@ module.exports = {
                                     .setTitle('IMP NOTE')
                                     .setDescription('```Be careful while adding any user. They will have access to Moderation commands```')
                                     .addField('**MODERATOR ADDED**', `<@${member.user.id}> has been added as a moderator.`)
-                                    .setFooter('Levix on Top ???')
+                                    .setFooter('Jingle on Top ???')
                             ]
                         });
                     } else {
@@ -139,7 +139,7 @@ module.exports = {
                         .setTitle('IMP NOTE')
                         .setDescription('```Be careful while adding any user. They will have access to Moderation commands```')
                         .addField('**MODERATOR REMOVED**', `User <@${targetId}> has been removed from moderators.`)
-                        .setFooter({ text: 'Levix on Top ???' });
+                        .setFooter({ text: 'Jingle on Top ???' });
                     return message.channel.send({ embeds: [embed] });
                 }
                 
@@ -169,7 +169,7 @@ module.exports = {
                             .setTitle('List of Moderators')
                             .setDescription(description)
                             .addField('**MODERATORS**', displayedModerators.map(id => `<@${id}>`).join('\n'))
-                            .setFooter('Levix on Top ???');
+                            .setFooter('Jingle on Top ???');
 
                         return message.channel.send({ embeds: [embed] });
                     } catch (err) {

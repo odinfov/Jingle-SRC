@@ -96,7 +96,7 @@ module.exports = {
                 }
 
                 
-                let description = '- By clicking Accept you agree to our terms and conditions.\n - Disable Onboarding\n - Disable Rules\n- After antivanity enable successfully you can enable all the thing above listed above\n\n**NOTE -**Levix will grant an external Discord account special permissions in your server to safeguard your vanity URL. If anyone tries to change your vanity URL, this account will automatically restore it to the original, ensuring it remains protected from theft.';
+                let description = '- By clicking Accept you agree to our terms and conditions.\n - Disable Onboarding\n - Disable Rules\n- After antivanity enable successfully you can enable all the thing above listed above\n\n**NOTE -**Jingle will grant an external Discord account special permissions in your server to safeguard your vanity URL. If anyone tries to change your vanity URL, this account will automatically restore it to the original, ensuring it remains protected from theft.';
                 const embed = new MessageEmbed()
                     .setColor(client.color)
                     .setDescription(description);

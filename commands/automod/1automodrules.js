@@ -138,7 +138,7 @@ async function enableAutomod(client, message) {
                 console.error(`Failed to delete rule: ${rule.name}`);
             }
         }
-        const alertChannel = await message.guild.channels.create('Levix - Automod Alerts', {
+        const alertChannel = await message.guild.channels.create('Jingle - Automod Alerts', {
             type: 'GUILD_TEXT',
             topic: 'Channel for automod alerts',
             permissionOverwrites: [
@@ -153,7 +153,7 @@ async function enableAutomod(client, message) {
         await setupMessage.edit({ embeds: [initialEmbed] });
 
         const bypassRole = await message.guild.roles.create({
-            name: 'Levix Automod Bypass',
+            name: 'Jingle Automod Bypass',
             permissions: []
         });
 
@@ -177,7 +177,7 @@ async function enableAutomod(client, message) {
 
         const ruleDataArray = [
             {
-                name: 'Levix | Anti Mass Mention',
+                name: 'Jingle | Anti Mass Mention',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -193,7 +193,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: alertChannel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {
@@ -205,7 +205,7 @@ async function enableAutomod(client, message) {
                 ]
             },
             {
-                name: 'Levix | Anti Spam',
+                name: 'Jingle | Anti Spam',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -217,7 +217,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: message.channel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {
@@ -229,7 +229,7 @@ async function enableAutomod(client, message) {
                 ]
             },
             {
-                name: 'Levix | Anti Pornography',
+                name: 'Jingle | Anti Pornography',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -244,7 +244,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: alertChannel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {
@@ -256,7 +256,7 @@ async function enableAutomod(client, message) {
                 ]
             },
             {
-                name: 'Levix | Anti Toxicity',
+                name: 'Jingle | Anti Toxicity',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -271,7 +271,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: alertChannel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {
@@ -283,7 +283,7 @@ async function enableAutomod(client, message) {
                 ]
             },
             {
-                name: 'Levix | Anti Toxicity 2',
+                name: 'Jingle | Anti Toxicity 2',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -298,7 +298,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: alertChannel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {
@@ -310,7 +310,7 @@ async function enableAutomod(client, message) {
                 ]
             },
             {
-                name: 'Levix | Automod',
+                name: 'Jingle | Automod',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -325,7 +325,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: alertChannel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {
@@ -337,7 +337,7 @@ async function enableAutomod(client, message) {
                 ]
             },
             {
-                name: 'Levix | Anti TOS',
+                name: 'Jingle | Anti TOS',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -382,7 +382,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: alertChannel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {
@@ -394,7 +394,7 @@ async function enableAutomod(client, message) {
                 ]
             },
             {
-                name: 'Levix | Anti Promo',
+                name: 'Jingle | Anti Promo',
                 creatorId: client.user.id,
                 enabled: true,
                 eventType: 1,
@@ -414,7 +414,7 @@ async function enableAutomod(client, message) {
                         metadata: {
                             channel: alertChannel.id,
                             durationSeconds: 10,
-                            customMessage: 'This message has been blocked by Levix.'
+                            customMessage: 'This message has been blocked by Jingle.'
                         }
                     },
                     {

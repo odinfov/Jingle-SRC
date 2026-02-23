@@ -80,15 +80,15 @@ module.exports = {
                         .setTitle('Logging System is Already Set Up')
                         .setDescription('Your server already has a configured logging system.')
                         .addField('How to Reset Logging?', 'You can manage logging settings using the appropriate commands.')
-                        .setFooter({ text: `Note : If you wannna setup logging again use ${message.guild.prefix}logsreset & delete all existinglog channels of Levix` })
+                        .setFooter({ text: `Note : If you wannna setup logging again use ${message.guild.prefix}logsreset & delete all existinglog channels of Jingle` })
                 ]
             });
         } 
 
         try {
-            let category = message.guild.channels.cache.find(c => c.type === 'GUILD_CATEGORY' && c.name === 'Levix Logs');
+            let category = message.guild.channels.cache.find(c => c.type === 'GUILD_CATEGORY' && c.name === 'Jingle Logs');
             if (!category) {
-                category = await message.guild.channels.create('Levix Logs', {
+                category = await message.guild.channels.create('Jingle Logs', {
                     type: 'GUILD_CATEGORY',
                     permissionOverwrites: [
                         {
@@ -118,7 +118,7 @@ module.exports = {
                                 .setTitle('Logging System is Already Set Up')
                                 .setDescription('Your server already has a configured logging system.')
                                 .addField('How to Reset Logging?', 'You can manage logging settings using the appropriate commands.')
-                                .setFooter({ text: `Note : If you wannna setup logging again use ${message.guild.prefix}logsreset & delete all existinglog channels of Levix` })
+                                .setFooter({ text: `Note : If you wannna setup logging again use ${message.guild.prefix}logsreset & delete all existinglog channels of Jingle` })
                         ]
                     });
                 }
@@ -160,7 +160,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setTitle('Logging Channels Setup Complete')
-                        .setDescription('All necessary logging channels have been successfully created under the "Levix LOGS" category.')
+                        .setDescription('All necessary logging channels have been successfully created under the "Jingle LOGS" category.')
                         .addField('Channels Created', '- **modlogs:** Logs moderation-related events.\n- **memberlogs:** Logs member-related events.\n- **msglogs:** Logs message-related events.\n- **channellogs:** Logs channel-related events.\n- **voicelogs:** Logs voice-related events\n- **rolelogs:** Logs role-related events.')
                         .addField('Additional Configuration', 'You can further customize logging settings and manage permissions as needed.')
                 ]

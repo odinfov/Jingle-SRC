@@ -1,6 +1,6 @@
-# Levix 🚀
+# Jingle 🚀
 
-Levix is a premium, high-performance Discord bot built with `discord.js`. It offers a massive array of features ranging from advanced security (Antinuke) to AI-powered interactions, making it an all-in-one solution for any Discord community.
+Jingle is a premium, high-performance Discord bot built with `discord.js`. It offers a massive array of features ranging from advanced security (Antinuke) to AI-powered interactions, making it an all-in-one solution for any Discord community.
 
 ## ✨ Features
 
@@ -18,7 +18,7 @@ Levix is a premium, high-performance Discord bot built with `discord.js`. It off
 ## 📂 Project Structure
 
 ```text
-Levix/
+Jingle/
 ├── commands/         # 18+ categories of bot commands (AI, Antinuke, Fun, etc.)
 ├── events/           # Discord.js event listeners (ready, messageCreate, etc.)
 ├── models/           # Database schemas for user and server data
@@ -39,8 +39,8 @@ Levix/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/odinfov/Levix-SRC.git
-   cd Levix
+   git clone https://github.com/odinfov/Jingle-SRC.git
+   cd Jingle-SRC
    ```
 
 2. **Install Dependencies**

@@ -15,11 +15,11 @@ module.exports = async (client) => {
         let own = await guild.fetchOwner()
         let links = guild.bannerURL({ dynamic: true, size: 1024 })
         if (guild.partnered && guild.verified)
-            emoji = `<:Levix_partner:1433500038365188196> <:Levix_verify:1433500065900658791>`
+            emoji = `<:Jingle_partner:1433500038365188196> <:Jingle_verify:1433500065900658791>`
         else if (guild.partnered && !guild.verified)
-            emoji = '<:Levix_partner:1433500038365188196>'
+            emoji = '<:Jingle_partner:1433500038365188196>'
         else if (!guild.partnered && guild.verified)
-            emoji = '<:Levix_verify:1433500065900658791>'
+            emoji = '<:Jingle_verify:1433500065900658791>'
         else if (!guild.partnered && !guild.verified)
             emoji = `${client.emoji.cross}`
         const embed = new MessageEmbed()

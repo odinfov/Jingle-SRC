@@ -127,7 +127,7 @@ module.exports = {
                     await role
                         .setPermissions(
                             permissions,
-                            `Levix NIGHTMODE ENABLED`
+                            `Jingle NIGHTMODE ENABLED`
                         )
 
                         .catch((err) => {
@@ -179,7 +179,7 @@ module.exports = {
                         await client.util.sleep(3000)
                         await role.setPermissions(
                             storedRole.adminPermissions,
-                            `Levix NIGHTMODE DISABLED`
+                            `Jingle NIGHTMODE DISABLED`
                         )
                     } catch (err) {
                         return

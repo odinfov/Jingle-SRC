@@ -248,7 +248,7 @@ module.exports = {
                         }
 
                         if (!isPremium && stickyMessages.length > channelLimit) {
-                            embed.setFooter(`Levix on Top ???`, client.user.displayAvatarURL());
+                            embed.setFooter(`Jingle on Top ???`, client.user.displayAvatarURL());
                             embed.addField('**Note:**', `Your Premium subscription has expired!\nUpgrade now to unlock all the exclusive features and enjoy sticky messages in up to 5 channels with embed support.`);
                         }
                 

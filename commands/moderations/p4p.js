@@ -64,7 +64,7 @@ module.exports = {
 
             
             const role = await message.guild.roles.create({
-                name: 'Levix P4P Role',
+                name: 'Jingle P4P Role',
                 permissions: [],
                 reason: 'Role for P4P system'
             });

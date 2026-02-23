@@ -57,7 +57,7 @@ module.exports = {
             }
 
             if (sus.roles.cache.has('1429493266063032352')) {
-                badges += `\n<a:Levix_Core_team_badges:1431359892228276295>・**Core Team**`;
+                badges += `\n<a:Jingle_Core_team_badges:1431359892228276295>・**Core Team**`;
             }
 
             if (sus.roles.cache.has('1429494019486126250')) {
@@ -65,15 +65,15 @@ module.exports = {
             }
 
             if (sus.roles.cache.has('1429544648015216801')) {
-                badges += `\n<:Levix_staffmanager:1431360397113561332>・**Manager**`;
+                badges += `\n<:Jingle_staffmanager:1431360397113561332>・**Manager**`;
             }
 
             if (sus.roles.cache.has('1431358781396090900')) {
-                badges += `\n<:Levix_supporters:1431360592991490229>・**Support Team**`;
+                badges += `\n<:Jingle_supporters:1431360592991490229>・**Support Team**`;
             }
 
             if (sus.roles.cache.has('1429547603866943719')) {
-                badges += `\n<a:Levix_bughunter:1431360791181004912>・**Bug Hunter**`;
+                badges += `\n<a:Jingle_bughunter:1431360791181004912>・**Bug Hunter**`;
             }
 
             if (sus.roles.cache.has('1429493816074698973')) {
@@ -101,7 +101,7 @@ module.exports = {
             }
 
             if (sus.roles.cache.has('1424046783738286201')) {
-                badges += `\n<:Levix_Members:1431362300798828797>・**Members**`;
+                badges += `\n<:Jingle_Members:1431362300798828797>・**Members**`;
             }
         } catch (err) {
             badges = badges || '`No Badge Available`\n[Join support to get badages](https://discord.gg/3xjw8snjnB)`';
@@ -115,7 +115,7 @@ module.exports = {
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
             .setColor(client.color)
             .setTimestamp()
-            .setDescription(`**BADGES** <a:Levix_boost:1431296205035540542>\n${badges || '`No Badge Available`\n[Join support to get badages](https://discord.gg/3xjw8snjnB)'}`);
+            .setDescription(`**BADGES** <a:Jingle_boost:1431296205035540542>\n${badges || '`No Badge Available`\n[Join support to get badages](https://discord.gg/3xjw8snjnB)'}`);
 
         message.channel.send({ embeds: [pr] });
     }

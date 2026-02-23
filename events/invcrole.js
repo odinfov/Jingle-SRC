@@ -29,7 +29,7 @@ module.exports = async (client) => {
                 await client.util.sleep(1000)
                 if (!newState.member.user.bot) {
                     await newState.member.roles
-                        .add(role, 'Member Joined Vc | Levix Humans VC Role')
+                        .add(role, 'Member Joined Vc | Jingle Humans VC Role')
                         .catch((err) => null)
                 }
             } else if (oldState.channel && !newState.channel) {
@@ -38,7 +38,7 @@ module.exports = async (client) => {
                     await oldState.member.roles
                         .remove(
                             role,
-                            'Member Left Vc | Levix Humans VC Role'
+                            'Member Left Vc | Jingle Humans VC Role'
                         )
                         .catch((err) => null)
                 }
@@ -77,14 +77,14 @@ module.exports = async (client) => {
                     await client.util.sleep(1000)
                     if (newState.member.user.bot) {
                         await newState.member.roles
-                            .add(role, 'Bot Joined Vc | Levix Bot Vc Role')
+                            .add(role, 'Bot Joined Vc | Jingle Bot Vc Role')
                             .catch((err) => null)
                     }
                 } else if (oldState.channel && !newState.channel) {
                     await client.util.sleep(1000)
                     if (oldState.member.user.bot) {
                         await oldState.member.roles
-                            .remove(role, 'Bot Left Vc | Levix Bot Vc Role')
+                            .remove(role, 'Bot Left Vc | Jingle Bot Vc Role')
                             .catch((err) => null)
                     }
                 }

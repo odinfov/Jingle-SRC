@@ -43,7 +43,7 @@ module.exports = async (client) => {
                             try {
                                 await message.member.timeout(
                                     5 * 60 * 1000,
-                                    'Levix | ANTILINK | TIMEOUT'
+                                    'Jingle | ANTILINK | TIMEOUT'
                                 )
                                 let scucess = await message.channel.send({
                                     embeds: [
@@ -70,7 +70,7 @@ module.exports = async (client) => {
                             try {
                                 await message.guild.members.kick(
                                     message.member.id,
-                                    'Levix | ANTILINK | KICK'
+                                    'Jingle | ANTILINK | KICK'
                                 )
                                 let scucess = await message.channel.send({
                                     embeds: [
@@ -95,7 +95,7 @@ module.exports = async (client) => {
                         await message.delete()
                         if (message.member.bannable) {
                             try {
-                                let reason = 'Levix | ANTILINK | BAN'
+                                let reason = 'Jingle | ANTILINK | BAN'
                                 await message.guild.members
                                     .ban(message.member.id, { reason: reason })
                                     .catch((e) => console.log(e))
@@ -195,7 +195,7 @@ module.exports = async (client) => {
                                 try {
                                     await message.member.timeout(
                                         5 * 60 * 1000,
-                                        'Levix | ANTISPAM | TIMEOUT'
+                                        'Jingle | ANTISPAM | TIMEOUT'
                                     )
                                     let success = await message.channel.send({
                                         embeds: [
@@ -221,7 +221,7 @@ module.exports = async (client) => {
                             if (message.member.kickable) {
                                 try {
                                     await message.member.kick(
-                                        'Levix | ANTISPAM | KICK'
+                                        'Jingle | ANTISPAM | KICK'
                                     )
                                     let success = await message.channel.send({
                                         embeds: [
@@ -246,7 +246,7 @@ module.exports = async (client) => {
                             if (message.member.banable) {
                                 try {
                                     await message.member.ban(
-                                        'Levix | ANTISPAM | BAN'
+                                        'Jingle | ANTISPAM | BAN'
                                     )
                                     let success = await message.channel.send({
                                         embeds: [

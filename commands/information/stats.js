@@ -97,12 +97,12 @@ Platform: ${platform} (${arch})`,
       .addFields(
         {
           name: " Owners",
-          value: `<:blank:1431364543573135372><a:Levix_Owner:1431012278781870192> - [ 𝑷𝒓𝒐𝒙𝒚 </>](https://discord.com/users/354455090888835073)\n<:blank:1431364543573135372><a:Levix_Owner:1431012278781870192> - [ 𝗜𝗻𝘃𝗶𝗰𝘁𝗶 ?](https://discord.com/users/354455090888835073)`,
+          value: `<:blank:1431364543573135372><a:Jingle_Owner:1431012278781870192> - [ 𝑷𝒓𝒐𝒙𝒚 </>](https://discord.com/users/354455090888835073)\n<:blank:1431364543573135372><a:Jingle_Owner:1431012278781870192> - [ 𝗜𝗻𝘃𝗶𝗰𝘁𝗶 ?](https://discord.com/users/354455090888835073)`,
           inline: false,
         },
         {
           name: " Developer",
-          value: `<:blank:1431364543573135372><a:Levix_Developer:1431012603710406847> [ 𝑫𝒆𝒗𝒓𝒂𝒋 </>](https://discord.com/users/354455090888835073)`,
+          value: `<:blank:1431364543573135372><a:Jingle_Developer:1431012603710406847> [ 𝑫𝒆𝒗𝒓𝒂𝒋 </>](https://discord.com/users/354455090888835073)`,
           inline: false,
         }
       )

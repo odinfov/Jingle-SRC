@@ -35,7 +35,7 @@ module.exports = {
                 });
             }
             
-            let category = await message.guild.channels.create('Levix', { 
+            let category = await message.guild.channels.create('Jingle', { 
                 type: 'GUILD_CATEGORY',
                 permissionOverwrites: [
                     {
@@ -86,34 +86,34 @@ module.exports = {
 
         const row1 = new MessageActionRow()
             .addComponents(
-                new MessageButton().setCustomId('lock').setEmoji('<:Levix_lock:1431299275756671056>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('unlock').setEmoji('<:Levix_unlock:1431299432233701508>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('hide').setEmoji('<:Levix_hide:1433948052388974672>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('unhide').setEmoji('<:Levix_unhide:1433951020005851217>').setStyle('SECONDARY')
+                new MessageButton().setCustomId('lock').setEmoji('<:Jingle_lock:1431299275756671056>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('unlock').setEmoji('<:Jingle_unlock:1431299432233701508>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('hide').setEmoji('<:Jingle_hide:1433948052388974672>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('unhide').setEmoji('<:Jingle_unhide:1433951020005851217>').setStyle('SECONDARY')
             );
 
         const row2 = new MessageActionRow()
             .addComponents(
-                new MessageButton().setCustomId('channel_name').setEmoji('<:Levix_rename:1431299694507724901>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('user_limit').setEmoji('<:Levix_limit:1431299842381975702>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('change_region').setEmoji('<:Levix_region:1431299983029833910>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('change_bitrate').setEmoji('<:Levix_bitrate:1431300781264338975>').setStyle('SECONDARY')
+                new MessageButton().setCustomId('channel_name').setEmoji('<:Jingle_rename:1431299694507724901>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('user_limit').setEmoji('<:Jingle_limit:1431299842381975702>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('change_region').setEmoji('<:Jingle_region:1431299983029833910>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('change_bitrate').setEmoji('<:Jingle_bitrate:1431300781264338975>').setStyle('SECONDARY')
             );
 
         const row3 = new MessageActionRow()
             .addComponents(
-                new MessageButton().setCustomId('mute').setEmoji('<:Levix_mute:1431300239712849920>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('unmute').setEmoji('<:Levix_voice:1430992734042329108>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('deafen').setEmoji('<:Levix_defean:1431300513193787462>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('undeafen').setEmoji('<:Levix_undeafean:1431300968858914938>').setStyle('SECONDARY')
+                new MessageButton().setCustomId('mute').setEmoji('<:Jingle_mute:1431300239712849920>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('unmute').setEmoji('<:Jingle_voice:1430992734042329108>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('deafen').setEmoji('<:Jingle_defean:1431300513193787462>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('undeafen').setEmoji('<:Jingle_undeafean:1431300968858914938>').setStyle('SECONDARY')
             );
 
         const row4 = new MessageActionRow()
             .addComponents(
-                new MessageButton().setCustomId('ban').setEmoji('<:Levix_ban:1433947999649665024>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('kick').setEmoji('<:Levix_kick:1433947952795357346>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('ban').setEmoji('<:Jingle_ban:1433947999649665024>').setStyle('SECONDARY'),
+                new MessageButton().setCustomId('kick').setEmoji('<:Jingle_kick:1433947952795357346>').setStyle('SECONDARY'),
                 new MessageButton().setCustomId('transfer_ownership').setEmoji('<:transfer:1431306190159347772>').setStyle('SECONDARY'),
-                new MessageButton().setCustomId('claim_ownership').setEmoji('<:Levix_claim:1431301429024260196>').setStyle('SECONDARY')
+                new MessageButton().setCustomId('claim_ownership').setEmoji('<:Jingle_claim:1431301429024260196>').setStyle('SECONDARY')
             );
         
 

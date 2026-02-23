@@ -16,7 +16,7 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed()
             .setColor(client.color)
-            .setFooter(`Developed By Levix Team`)
+            .setFooter(`Developed By Jingle Team`)
         const row = new MessageActionRow().addComponents(
             new MessageButton()
                 .setLabel('Premium')
@@ -105,7 +105,7 @@ module.exports = {
                             )
                         ]
                     })         
-                    await message.guild.me.setNickname('Levix Prime')           
+                    await message.guild.me.setNickname('Jingle Prime')           
                 }
                 break
 

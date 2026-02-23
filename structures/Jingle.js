@@ -7,7 +7,7 @@ const axios = require('axios');
 const Sweepers = require('./Sweepers');
 const { QuickDB } = require('quick.db');
 
-module.exports = class Levix extends Client {
+module.exports = class Jingle extends Client {
     constructor() {
         super({
             intents: 3276543,
@@ -24,9 +24,9 @@ module.exports = class Levix extends Client {
         this.commands = new Collection();
         this.categories = fs.readdirSync('./commands/');
         this.emoji = {
-            tick: '<:Levix_yes:1430998886494896240>',
-            cross: '<:Levix_no:1430998925308858369>',
-            dot: '<a:Levix_dot:1431006158549684247>'
+            tick: '<:Jingle_yes:1430998886494896240>',
+            cross: '<:Jingle_no:1430998925308858369>',
+            dot: '<a:Jingle_dot:1431006158549684247>'
         };
         this.util = new Utils(this);
         this.Sweeper = new Sweepers(this);

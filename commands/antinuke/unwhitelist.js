@@ -72,7 +72,7 @@ module.exports = {
             const dissable = new MessageEmbed().setColor(client.color)
                 .setDescription(` ** ${message.guild.name} security settings Ohh NO! looks like your server doesn't enabled security
 
-Current Status : <a:Levix_disable:1431277129441742874> <:Levix_enable2:1431277725015998558> To enable use antinuke enable ** `)
+Current Status : <a:Jingle_disable:1431277129441742874> <:Jingle_enable2:1431277725015998558> To enable use antinuke enable ** `)
             return message.channel.send({ embeds: [dissable] })
         }
 

@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
-let enable = `<:Levix_disable2:1431277797120147490> <:Levix_enable2:1431277725015998558>`;
-let disable = `<a:Levix_disable:1431277129441742874> <:Levix_enable2:1431277725015998558>`;
-let protect = `<:Levix_ANT:1433954639040221265>`;
+let enable = `<:Jingle_disable2:1431277797120147490> <:Jingle_enable2:1431277725015998558>`;
+let disable = `<a:Jingle_disable:1431277129441742874> <:Jingle_enable2:1431277725015998558>`;
+let protect = `<:Jingle_ANT:1433954639040221265>`;
 const wait = require('wait');
 const config = require('../../config.json');
 

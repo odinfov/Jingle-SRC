@@ -388,7 +388,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'security')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:Levix:1242115139453452308> Antinuke \`[${_commands.length}]\`**`,
+                    `**<:Jingle:1242115139453452308> Antinuke \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction

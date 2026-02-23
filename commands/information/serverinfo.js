@@ -13,8 +13,8 @@ const booster = {
     TIER_2: 'Level 2',
     TIER_3: 'Level 3'
 }
-const disabled = '<:Levix_no:1430998925308858369>'
-const enabled = '<:Levix_yes:1430998886494896240>'
+const disabled = '<:Jingle_no:1430998925308858369>'
+const enabled = '<:Jingle_yes:1430998886494896240>'
 
 module.exports = {
     name: 'serverinfo',
@@ -60,7 +60,7 @@ module.exports = {
             .addFields([
                 {
                     name: '__About__',
-                    value: `> **Name**: ${guild.name} \n > **ID**: ${guild.id} \n > **Owner <a:Levix_Owner:1431012278781870192>:** <@!${ownerId}> (${ownerId})\n > **Created at:** <t:${parseInt(createdTimestamp / 1000)}:R>\n > **Members: **${guild.memberCount}\n > **Banned Members: **${bans}`
+                    value: `> **Name**: ${guild.name} \n > **ID**: ${guild.id} \n > **Owner <a:Jingle_Owner:1431012278781870192>:** <@!${ownerId}> (${ownerId})\n > **Created at:** <t:${parseInt(createdTimestamp / 1000)}:R>\n > **Members: **${guild.memberCount}\n > **Banned Members: **${bans}`
                 },
                 {
                     name: '__Server Information__',
@@ -72,7 +72,7 @@ module.exports = {
                 },                            
                 {
                     name: '__Channels__',
-                    value: `> **Text: **<:Levix_text:1433949954682130545> ${channels.filter((channel) => channel.type === 'GUILD_TEXT').size}\n > **Voice:** <:Levix_voice:1430992734042329108> ${channels.filter((channel) => channel.type === 'GUILD_VOICE').size}\n > **Total: ** ${channels.size}\n`
+                    value: `> **Text: **<:Jingle_text:1433949954682130545> ${channels.filter((channel) => channel.type === 'GUILD_TEXT').size}\n > **Voice:** <:Jingle_voice:1430992734042329108> ${channels.filter((channel) => channel.type === 'GUILD_VOICE').size}\n > **Total: ** ${channels.size}\n`
                 },
                 {
                     name: '__Emoji Info__',
@@ -80,7 +80,7 @@ module.exports = {
                 },
                 {
                     name: '__Boost Status__',
-                    value: `> **Count:** ${guild.premiumSubscriptionCount || '0'} <a:Levix_boost:1431296205035540542> \n > **Level:** ${booster[guild.premiumTier]}\n > **Role:** ${premiumRole ? `<@&${premiumRole.id}>` : 'None'}`
+                    value: `> **Count:** ${guild.premiumSubscriptionCount || '0'} <a:Jingle_boost:1431296205035540542> \n > **Level:** ${booster[guild.premiumTier]}\n > **Role:** ${premiumRole ? `<@&${premiumRole.id}>` : 'None'}`
                 },
                 {
                     name: `__Server Roles__ [${roles.length}]`,

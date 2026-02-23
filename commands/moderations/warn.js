@@ -72,10 +72,10 @@ module.exports = {
         const embed = new MessageEmbed()
             .setAuthor('Successfully Warned', user.displayAvatarURL({ dynamic: true }))
             .setDescription(`
-            <:Levix_user:1434977546125967453> Target User: <@${user.id}>
-            <:Levix_email:1434978081654964474> DM Sent: Yes
-            <:Levix_warning:1434978229730414704> **Warned By**: [${message.member.displayName}](https://discord.com/users/${message.author.id})
-            <:Levix_Gems:1434978435599433738> Reason: ${reason || 'None'}
+            <:Jingle_user:1434977546125967453> Target User: <@${user.id}>
+            <:Jingle_email:1434978081654964474> DM Sent: Yes
+            <:Jingle_warning:1434978229730414704> **Warned By**: [${message.member.displayName}](https://discord.com/users/${message.author.id})
+            <:Jingle_Gems:1434978435599433738> Reason: ${reason || 'None'}
             `)
             .setColor(client.color)
             .setFooter(`Moderator`, message.author.displayAvatarURL({ dynamic: true }));
@@ -84,7 +84,7 @@ module.exports = {
                 const warningEmbed = new MessageEmbed()
                 .setAuthor('Warn Notification', client.user.displayAvatarURL())
                 .setColor(client.color)
-                .setDescription(`<:Levix_user:1434977546125967453> You have been warned in **${message.guild.name}** Warned By: [${message.member.displayName}](https://discord.com/users/${message.author.id})\n<:Levix_Gems:1434978435599433738> **Reason:** ${reason}`)
+                .setDescription(`<:Jingle_user:1434977546125967453> You have been warned in **${message.guild.name}** Warned By: [${message.member.displayName}](https://discord.com/users/${message.author.id})\n<:Jingle_Gems:1434978435599433738> **Reason:** ${reason}`)
 
             await user.send({ embeds: [warningEmbed] });
 

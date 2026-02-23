@@ -76,7 +76,7 @@ module.exports = class MemorySweeper {
             users++
         }
 
-        if (this.client.user.tag !== 'Levix#1044') return
+        if (this.client.user.tag !== 'Jingle#1044') return
 
         const embed = new MessageEmbed()
             .setTitle(`Cluster #${this.id} | Memory Sweeper`)

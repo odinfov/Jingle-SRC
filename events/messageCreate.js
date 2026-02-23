@@ -6,7 +6,7 @@ const {
     Collection,
     WebhookClient
 } = require('discord.js')
-const Levix = ["354455090888835073", "354455090888835073", "354455090888835073"]
+const Jingle = ["354455090888835073", "354455090888835073", "354455090888835073"]
 const cooldowns = new Collection();
 module.exports = async (client) => {
     client.on('messageCreate', async (message) => {
@@ -47,7 +47,7 @@ module.exports = async (client) => {
                         .send({
                             embeds: [
                                 new MessageEmbed()
-                                    .setFooter(`Developed By Levix Team`)
+                                    .setFooter(`Developed By Jingle Team`)
                                     .setColor(client.color)
                                     .setTitle('Premium Expiring Soon!')
                                     .setDescription(
@@ -87,7 +87,7 @@ module.exports = async (client) => {
                             owner.send({
                                 embeds: [
                                     new MessageEmbed()
-                                        .setFooter(`Developed By Levix Team`)
+                                        .setFooter(`Developed By Jingle Team`)
                                         .setColor(client.color)
                                         .setTitle('Server Premium Expiring Soon!')
                                         .setDescription(
@@ -103,7 +103,7 @@ module.exports = async (client) => {
                         .send({
                             embeds: [
                                 new MessageEmbed()
-                                    .setFooter(`Developed By Levix Team`)
+                                    .setFooter(`Developed By Jingle Team`)
                                     .setColor(client.color)
                                     .setTitle('Server Premium Expiring Soon!')
                                     .setDescription(
@@ -166,7 +166,7 @@ module.exports = async (client) => {
                     .send({
                         embeds: [
                             new MessageEmbed()
-                                .setFooter(`Developed By Levix Team`)
+                                .setFooter(`Developed By Jingle Team`)
                                 .setColor(client.color)
                                 .setDescription(
                                     `Your Premium Has Got Expired.\nTotal **\`${scot}\`** Servers [Premium](https://discord.gg/3xjw8snjnB) was removed.\nClick [here](https://discord.gg/3xjw8snjnB) To Buy [Premium](https://discord.gg/3xjw8snjnB).`
@@ -244,7 +244,7 @@ module.exports = async (client) => {
                             .send({
                                 embeds: [
                                     new MessageEmbed()
-                                        .setFooter(`Developed By Levix Team`)
+                                        .setFooter(`Developed By Jingle Team`)
                                         .setColor(client.color)
                                         .setDescription(
                                             `Your Premium Has Got Expired.\nTotal **\`${scount}\`** Servers [Premium](https://discord.gg/3xjw8snjnB) was removed.\nClick [here](https://discord.gg/3xjw8snjnB) To Buy [Premium](https://discord.gg/3xjw8snjnB).`
@@ -278,7 +278,7 @@ module.exports = async (client) => {
                     .send({
                         embeds: [
                             new MessageEmbed()
-                                .setFooter(`Developed By Levix Team`)
+                                .setFooter(`Developed By Jingle Team`)
                                 .setColor(client.color)
                                 .setDescription(
                                     `The Premium Of This Server Has Got Expired.\nClick [here](https://discord.gg/3xjw8snjnB) To Buy [Premium](https://discord.gg/3xjw8snjnB).`
@@ -288,7 +288,7 @@ module.exports = async (client) => {
                     })
                     .catch((err) => { })
                 // const botMember = message.guild.members.cache.get(client.user.id);
-                //     if (botMember && botMember.displayName === "Levix Pro") {
+                //     if (botMember && botMember.displayName === "Jingle Pro") {
                 //         await botMember.setNickname(null)
                 //             .catch(err => console.error("Could not change nickname:", err));
                 //     } else {
@@ -357,7 +357,7 @@ module.exports = async (client) => {
                 //     return message.channel.send({
                 //         embeds: [
                 //             new MessageEmbed()
-                //                 .setFooter(`Developed By Levix Team`)
+                //                 .setFooter(`Developed By Jingle Team`)
                 //                 .setColor(client.color)
                 //                 .setTitle('Premium Required')
                 //                 .setDescription(
@@ -381,7 +381,7 @@ module.exports = async (client) => {
                                 `Hey [${message.author.username}](https://discord.com/users/${message.author.id})\nPrefix For This Server Is \`${message.guild.prefix}\`\n\nUnlock More Details With \`${message.guild.prefix}\help\`.`
                             )
                             .setFooter({
-                                text: `Levix on Top ???`,
+                                text: `Jingle on Top ???`,
                                 iconURL: user.displayAvatarURL({
                                     dynamic: true
                                 })
@@ -464,7 +464,7 @@ module.exports = async (client) => {
                         const ignore = (await client.db?.get(
                             `ignore_${message.guild.id}`
                         )) ?? { channel: [], role: [] }
-                        let isSpecialMember = Levix.includes(message.author.id)
+                        let isSpecialMember = Jingle.includes(message.author.id)
                         if (
                             !isSpecialMember && ignore.channel.includes(message.channel.id) &&
                             !message.member.roles.cache.some((role) =>
@@ -754,7 +754,7 @@ module.exports = async (client) => {
             if (aiChannel?.channelId === message.channel.id) {
                 return;
             }
-            let isSpecialMember = Levix.includes(message.author.id);
+            let isSpecialMember = Jingle.includes(message.author.id);
             if (
                 !isSpecialMember && ignore.channel.includes(message.channel.id) &&
                 !message.member.roles.cache.some((role) =>
@@ -902,7 +902,7 @@ module.exports = async (client) => {
             //     return message.channel.send({
             //         embeds: [
             //             new MessageEmbed()
-            //                 .setFooter(`Developed By Levix Team`)
+            //                 .setFooter(`Developed By Jingle Team`)
             //                 .setColor(client.color)
             //                 .setTitle('Premium Required')
             //                 .setDescription(

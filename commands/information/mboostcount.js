@@ -14,7 +14,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setColor(client.color)
             .setTitle(`${message.guild.name}`)
-            .setDescription(`**<:hash:1270978455181463623> BoostCount**\n**<a:Levix_boost:1431296205035540542> ${boostCount} Boosts**`);
+            .setDescription(`**<:hash:1270978455181463623> BoostCount**\n**<a:Jingle_boost:1431296205035540542> ${boostCount} Boosts**`);
 
         
         message.channel.send({ embeds: [embed] });

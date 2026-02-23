@@ -82,7 +82,7 @@ module.exports = {
 
             try {
                 await channel.setRateLimitPerUser(10, 'AI Channel activation');
-                await channel.setTopic('AI Channel of Levix Ask Anything You Want, Anytime! | Instant Answers with a 10 Second Cooldown Between Messages. Expertise at your fingertips.');
+                await channel.setTopic('AI Channel of Jingle Ask Anything You Want, Anytime! | Instant Answers with a 10 Second Cooldown Between Messages. Expertise at your fingertips.');
                 await client.db.set(`aiChannel_${guildId}`, { channelId: channel.id });
                 
                 const successEmbed = createEmbed(

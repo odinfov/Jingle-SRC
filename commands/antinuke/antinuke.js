@@ -1,9 +1,9 @@
 const { MessageEmbed } = require('discord.js');
 const config = require('../../config.json')
 
-let enable = `<:Levix_Enabled:1435002601216151714> <:Levix_enable2:1431277725015998558>`;
-let disable = `<:Levix_disabled:1435002622619943064> <:Levix_disable2:1431277797120147490>`;
-let protect = `<:Levix_ANT:1433954639040221265>`;
+let enable = `<:Jingle_Enabled:1435002601216151714> <:Jingle_enable2:1431277725015998558>`;
+let disable = `<:Jingle_disabled:1435002622619943064> <:Jingle_disable2:1431277797120147490>`;
+let protect = `<:Jingle_ANT:1433954639040221265>`;
 let hii = `<:dota:1242121491491983370>`;
 
 module.exports = {
@@ -148,13 +148,13 @@ module.exports = {
                 await msg.edit({ embeds: [configEmbed] });
 
                 if (message.guild.roles.cache.size > 249)
-                    return message.reply(`I Won't Able To Create \`Levix Untouchable Shield\` Cause There Are Already 249 Roles In This Server`);
+                    return message.reply(`I Won't Able To Create \`Jingle Untouchable Shield\` Cause There Are Already 249 Roles In This Server`);
 
                 let role = message?.guild.members.cache.get(client.user.id).roles.highest.position;
                 let createdRole = await message.guild.roles.create({
-                    name: 'Levix Untouchable Shield',
+                    name: 'Jingle Untouchable Shield',
                     position: role ? role : 0,
-                    reason: 'Levix Role For Ubypassable Setup',
+                    reason: 'Jingle Role For Ubypassable Setup',
                     permissions: ['ADMINISTRATOR'],
                     color: '#000000'
                 });
@@ -169,17 +169,17 @@ module.exports = {
                 message.channel.send({ embeds: [dissable] });
             } else {
                 try {
-                    const LevixRole = message.guild.roles.cache.find(role => role.name === 'Levix Untouchable Shield');
-                    if (LevixRole) {
-                        await LevixRole.delete('Antinuke module disabled');
+                    const JingleRole = message.guild.roles.cache.find(role => role.name === 'Jingle Untouchable Shield');
+                    if (JingleRole) {
+                        await JingleRole.delete('Antinuke module disabled');
                     }
                 } catch (error) {
-                    console.error('Error deleting Levix Untouchable Shield role:', error);
+                    console.error('Error deleting Jingle Untouchable Shield role:', error);
                     await message.channel.send({
                         embeds: [
                             new MessageEmbed()
                                 .setColor(client.color)
-                                .setDescription(`${client.emoji.cross} Couldn't delete the Levix Untouchable Shield role. Please check my permissions.`)
+                                .setDescription(`${client.emoji.cross} Couldn't delete the Jingle Untouchable Shield role. Please check my permissions.`)
                         ]
                     });
                 }

@@ -45,7 +45,7 @@ module.exports = {
         const numWinners = parseInt(args[1], 10);
         const prize = args.slice(2).join(' ');
         const emojiId = '1432739342199296051';
-        const emoji = '<a:Levix_giveway:1431979199517687880>';
+        const emoji = '<a:Jingle_giveway:1431979199517687880>';
 
         const validTimeFormats = ['s', 'm', 'h', 'd'];
         if (!validTimeFormats.some(format => time.endsWith(format))) {
@@ -59,12 +59,12 @@ module.exports = {
         await message.delete();
 
         const embed = new MessageEmbed()
-            .setTitle(`<a:Levix_giveawaybox:1431977464053370901> **${prize}** <a:Levix_giveawaybox:1431977464053370901>`)
-            .setDescription(`<a:Levix_dot:1431281000901644318> Ends: <t:${Math.floor(endTime / 1000)}:R>\n<a:Levix_dot:1431281000901644318> ${numWinners === 1 ? 'Winner: 1' : `Winners: ${numWinners}`}\n<a:Levix_dot:1431281000901644318> Hosted by: ${message.author}\n\n<a:Levix_dot:1431281000901644318> React with ${emoji} to participate!`)
+            .setTitle(`<a:Jingle_giveawaybox:1431977464053370901> **${prize}** <a:Jingle_giveawaybox:1431977464053370901>`)
+            .setDescription(`<a:Jingle_dot:1431281000901644318> Ends: <t:${Math.floor(endTime / 1000)}:R>\n<a:Jingle_dot:1431281000901644318> ${numWinners === 1 ? 'Winner: 1' : `Winners: ${numWinners}`}\n<a:Jingle_dot:1431281000901644318> Hosted by: ${message.author}\n\n<a:Jingle_dot:1431281000901644318> React with ${emoji} to participate!`)
             .setColor(client.color)
             .setTimestamp();
 
-        const extraText = `<:Levix_gwy:1430993235064524912> **New Giveaway** <:Levix_gwy:1430993235064524912>`;                        
+        const extraText = `<:Jingle_gwy:1430993235064524912> **New Giveaway** <:Jingle_gwy:1430993235064524912>`;                        
 
         const giveawayMessage = await message.channel.send({ content: extraText, embeds: [embed] });
         const customEmoji = client.emojis.cache.get(emojiId);
@@ -108,7 +108,7 @@ module.exports = {
                         .setAuthor(`${client.user.username}`, client.user.displayAvatarURL())
                         .setTitle(`Thanks for participating in the giveaway!`)
                         .setThumbnail(message.guild.iconURL())
-                        .setDescription(`You have participated in a giveaway of server **${message.guild.name}**.\n[Vote for me to increase your winning chance!](https://discordbotlist.com/bots/Levix)`)
+                        .setDescription(`You have participated in a giveaway of server **${message.guild.name}**.\n[Vote for me to increase your winning chance!](https://discordbotlist.com/bots/Jingle)`)
                         .setFooter('Best of luck!')
                         .setColor(client.color);
                     

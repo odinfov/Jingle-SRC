@@ -2,9 +2,9 @@ const wait = require('wait');
 require('dotenv').config();
 require('module-alias/register');
 const path = require('path');
-const Levix = require(`./structures/Levix.js`);
-const client = new Levix();
-Levix.setMaxListeners(20);
+const Jingle = require(`./structures/Jingle.js`);
+const client = new Jingle();
+Jingle.setMaxListeners(20);
 this.config = require(`${process.cwd()}/config.json`);
 const Giveaway = require('./models/giveaway');
 const vcban = require('./commands/voice/vcban'); 
@@ -173,11 +173,11 @@ async function endGiveaway(client, giveaway, activeTimeouts) {
         }
 
         const endEmbed = new MessageEmbed(message.embeds[0])
-            .setTitle(`<a:Levix_giveawaybox:1431977464053370901> **${giveaway.prize}** <a:Levix_giveawaybox:1431977464053370901>`)
-            .setDescription(`<a:Levix_dot:1431281000901644318> Ended: <t:${Math.floor(Date.now() / 1000)}:R>\n<a:Levix_dot:1431281000901644318> Hosted by: <@${giveaway.hostId}>\n\n<a:Levix_dot:1431281000901644318> **Winners:**\n${winners.length > 0 ? winners.map(user => user.toString()).join(', ') : 'No entries detected therefore cannot declare the winner.'}`)
+            .setTitle(`<a:Jingle_giveawaybox:1431977464053370901> **${giveaway.prize}** <a:Jingle_giveawaybox:1431977464053370901>`)
+            .setDescription(`<a:Jingle_dot:1431281000901644318> Ended: <t:${Math.floor(Date.now() / 1000)}:R>\n<a:Jingle_dot:1431281000901644318> Hosted by: <@${giveaway.hostId}>\n\n<a:Jingle_dot:1431281000901644318> **Winners:**\n${winners.length > 0 ? winners.map(user => user.toString()).join(', ') : 'No entries detected therefore cannot declare the winner.'}`)
             .setFooter('Ended');
 
-        await message.edit({content: '<:Levix_gwy:1430993235064524912> **Giveaway Ended** <:Levix_gwy:1430993235064524912>', embeds: [endEmbed] });
+        await message.edit({content: '<:Jingle_gwy:1430993235064524912> **Giveaway Ended** <:Jingle_gwy:1430993235064524912>', embeds: [endEmbed] });
 
         if (activeTimeouts[giveaway.messageId]) {
             clearTimeout(activeTimeouts[giveaway.messageId]);

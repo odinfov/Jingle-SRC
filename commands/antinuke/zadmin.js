@@ -88,7 +88,7 @@ module.exports = {
                             .setTitle('IMP NOTE')
                             .setDescription('```Be careful while adding any user. They will have access to Moderation command```')
                             .addField('**ADMIN ADDED**', `<@${member.user.id}> has been added as an admin.`)
-                            .setFooter('Levix on Top ???');
+                            .setFooter('Jingle on Top ???');
                         return message.channel.send({ embeds: [embed] });
                     }
 
@@ -124,7 +124,7 @@ module.exports = {
                                 .setTitle('IMP NOTE')
                                 .setDescription('```Be careful while adding any user. They will have access to Moderation command```')
                                 .addField('**ADMIN REMOVED**', `User <@${targetId}> has been removed from admin.`)
-                                .setFooter('Levix on Top ???');
+                                .setFooter('Jingle on Top ???');
                             return message.channel.send({ embeds: [embed] });
                         }                
 
@@ -154,7 +154,7 @@ module.exports = {
                                     .setTitle('List of Admins')
                                     .setDescription(description)
                                     .addField('ADMIN LIST', adminList)
-                                    .setFooter('Levix on Top ???');
+                                    .setFooter('Jingle on Top ???');
                                 
                                 return message.channel.send({ embeds: [embed] });
                             }                    
